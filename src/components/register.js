@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Sign_img from "./sign_img";
+import { NavLink } from "react-router-dom";
 
-const Home = () => {
+const Register = () => {
 
     const [inpval, setInputval] = useState({
         name: "",
@@ -42,6 +43,10 @@ const Home = () => {
         else if (!email.includes("@")) {
             alert("Enter a valid mail");
         }
+        else if (date === "")
+        {
+            alert("password field should not be empty...!");
+        }
         else if (password === "") {
             alert("password field should not be empty...!");
         }
@@ -49,7 +54,7 @@ const Home = () => {
             alert("Password should be of atleast 6 digits");
         }else
         {
-            localStorage.setItem("userRegisteration",JSON.stringify(...data,inpval));
+            localStorage.setItem("userRegistration",JSON.stringify([...data,inpval]));
             alert("Data saved successfully...!");
         }
     }
@@ -86,7 +91,7 @@ const Home = () => {
                                 Submit
                             </Button>
                         </Form>
-                        <p className="mt-2">Already Have an account <span>Sign In</span></p>
+                        <p className="mt-2">Already Have an account <span><NavLink to="/login">Sign In</NavLink></span></p>
 
                     </div>
                     <div className="right_data">
@@ -98,4 +103,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Register
