@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.validation-alert{
+  font-size: 10px;
+  border-radius: 0.375rem;
+  padding: 2px 5px;
+  color: rgb(238, 57, 57);
+  background-color: white;
+}

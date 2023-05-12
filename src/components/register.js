@@ -64,7 +64,6 @@ const Register = () => {
             <div className="container mt-5">
                 <section className="d-flex justify-content-between">
                     <div className="left_data " style={{ width: "100%" }}>
-
                         <h3 className="my-4 text-center col-lg-6">Sign Up</h3>
 
                         <Form>
@@ -84,9 +83,9 @@ const Register = () => {
                             <Form.Group className="mb-3 col-lg-6" controlId="formBasicPassword">
                                 <Form.Control name="password" onChange={getdata} type="password" placeholder="Password" />
                             </Form.Group>
-                            {/* <Form.Group className="mb-3 col-lg-6" controlId="formBasicCheckbox">
+                            <Form.Group className="mb-3 col-lg-6" controlId="formBasicCheckbox">
                                 <Form.Check onChange={getdata} type="checkbox" label="Agree terms & conditions." />
-                            </Form.Group> */}
+                            </Form.Group>
                             <Button variant="primary" onClick={addData} className="col-lg-6" style={{ background: "#12ce73", border: "none" }} type="submit">
                                 Submit
                             </Button>

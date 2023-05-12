@@ -57,7 +57,7 @@ const Details = () => {
                         <>
                             <h1>Details Page</h1>
                             <h1>{logindata[0].name}</h1>
-                            <Button onClick={userlogout}>LogOut</Button>
+                            <Button onClick={userlogout}>Logout</Button>
 
                             {
                                 logindata[0].date === todayDate ?

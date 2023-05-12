@@ -23,13 +23,10 @@ const Login = () => {
         const { value, name } = e.target;
         // console.log(value, name);
 
-        setInputval(() => {
-            return {
-                ...inpval,
-                [name]: value
-            }
-        })
-    }
+        setInputval(
+                {...inpval,
+                [name]: value})
+    }   
 
     const addData = (e) => {
         e.preventDefault();
