@@ -45,10 +45,6 @@ const Products = () => {
         const { value } = e.target;
         setProductName(value)
     };
-    // const VerifyImage = (e) => {
-    //     const { value } = e.target;
-    //     setProductImage(value)
-    // };
 
     const handleFile = event => {
         setFile(
@@ -100,27 +96,27 @@ const Products = () => {
     };
 
 
-    
-// useEffect(()=>{},[products,setProducts,DeleteProduct])
-        console.log(products)
+
+    // useEffect(()=>{},[products,setProducts,DeleteProduct])
+    console.log(products)
     return (
         <>
             <div className="container p-3">
-               {products && products.length >0 && <Carousel responsive={responsive}>
-                    
+                {products && products.length > 0 && <Carousel responsive={responsive}>
+
                     {
-                        products.map((obj,i) => {
+                        products.map((obj, i) => {
                             return (
                                 <ProductCard
                                     ProTitle={obj.ProTitle}
                                     ProImage={obj.ProImage}
                                     ProDescription={obj.ProDescription}
-                                    ProPrice={obj.ProPrice} 
+                                    ProPrice={obj.ProPrice}
                                     ProId={obj.ProId}
-                                    products={products }
+                                    products={products}
                                     setProducts={setProducts}
                                     i={i}
-                                    />)
+                                />)
                         })
                     }
                 </Carousel>}
