@@ -70,7 +70,7 @@ const Login = () => {
 
     return (
         <>
-            <div className="container mt-5">
+            <div className="container">
                 <section className="d-flex justify-content-between">
                     <div className="left_data " style={{ width: "100%" }}>
 

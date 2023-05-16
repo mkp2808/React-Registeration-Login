@@ -1,14 +1,14 @@
 import React from "react";
 
 
-const Sign_img = () => {
+const SignImg = () => {
     return (
         <>
-        <div className="Sign_img">
-            <img src="./home_img.svg" style={{maxWidth: "35vw"}}/>
-        </div>
+            <div className="Sign_img">
+                <img src="./home_img.svg" style={{ maxWidth: "35vw",padding:"20% 0"}} />
+            </div>
         </>
     )
 }
 
-export default Sign_img
+export default SignImg
